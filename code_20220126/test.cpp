@@ -10,7 +10,7 @@ struct List {
 List* sameNode(List* headA, List* headB) {
 	List* ptr = headA;
 	int lenA = 0, lenB = 0;
-	//计算长度
+	//计算长度1
 	while (ptr != nullptr) {
 		lenA++;
 		ptr = ptr->next;
