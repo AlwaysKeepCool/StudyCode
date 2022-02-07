@@ -1,18 +1,18 @@
 
 #include<stdio.h>
-//ÔÚÒ»¸öÓĞĞòÊı×éÖĞ²éÕÒ¾ßÌåµÄÄ³¸öÊı×Ön 
+//åœ¨ä¸€ä¸ªæœ‰åºæ•°ç»„ä¸­æŸ¥æ‰¾å…·ä½“çš„æŸä¸ªæ•°å­—n 
 int main()
 {
 	int arr[] = { 1,2,3,4,5,6,7,8,9 };
-	int k = 10;//ĞèÒªÕÒµÄÊı
-	int sz = sizeof(arr) / sizeof(arr[0]);//Êı×éÔªËØµÄ¸öÊı
+	int k = 10;//éœ€è¦æ‰¾çš„æ•°
+	int sz = sizeof(arr) / sizeof(arr[0]);//æ•°ç»„å…ƒç´ çš„ä¸ªæ•°
 	int left = 0, right = sz - 1;
 	while (left<=right)
 	{
 		int mid = (left + right) / 2;
 		if (k == arr[mid])
 		{
-			printf("¸ÃÊı×ÖµÄÏÂ±êÊÇ%d\n", mid);
+			printf("è¯¥æ•°å­—çš„ä¸‹æ ‡æ˜¯%d\n", mid);
 			break;
 		}
 		else if (arr[mid] > k)
@@ -24,11 +24,13 @@ int main()
 	}
 	if (left > right)
 	{
-		printf("ÕÒ²»µ½¸ÃÊı×Ö£¡");
+		printf("æ‰¾ä¸åˆ°è¯¥æ•°å­—ï¼");
 	}
 	
 	return 0;
 }
+
+å’Œä¸‹é¢ä¸€ä¸ªé¢˜ç±»ä¼¼éƒ½éœ€è¦æœ‰while (left<=right)çš„æ€æƒ³
 
 
 
